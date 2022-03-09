@@ -1,0 +1,59 @@
+.navTwo {
+  max-width: $site-width;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 99;
+  border-bottom: 2px solid $site-black;
+  // background-color: $site-black;
+
+  .logoTwo {
+    width: 92px;
+    height: 38px;
+    margin-left: 5px;
+    border: 2px solid $site-black;
+
+    p {
+      margin-top: 17px;
+      font-size: 20px;
+      letter-spacing: 1.6px;
+      font-family: GillSans;
+      color: $site-black;
+    }
+  }
+
+  .linksTwo {
+    a {
+      font-size: 15px;
+      text-decoration: none;
+      font-family: GillSans;
+      color: $site-black;
+    }
+
+    span {
+      font-size: 15px;
+      margin: 0 20px;
+      font-family: GillSans;
+      color: $site-black;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .navTwo {
+    text-align: center;
+    margin-right: 20px;
+
+    .linksTwo {
+      margin-right: 30px;
+      flex-direction: column;
+
+      a {
+        flex-direction: column;
+        margin: 0.8em 0;
+      }
+    }
+  }
+}

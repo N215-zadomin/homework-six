@@ -1,0 +1,2991 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* begin font families */
+@font-face {
+  font-family: GillSans;
+  src: url(../scss/fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(../scss/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: ProximaNovaThin;
+  src: url(../scss/fonts/Proxima-Nova-Thin.otf);
+}
+nav {
+  max-width: 980px;
+  height: 80px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 99;
+  border-bottom: 2px solid #fff;
+}
+nav .logo {
+  width: 92px;
+  height: 38px;
+  border: 2px solid #fff;
+}
+nav p {
+  margin-top: 17px;
+  font-size: 20px;
+  letter-spacing: 1.6px;
+  font-family: GillSans;
+  color: #fff;
+}
+
+.links a {
+  font-size: 15px;
+  text-decoration: none;
+  font-family: GillSans;
+  color: #fff;
+}
+.links span {
+  font-size: 15px;
+  margin: 0 20px;
+  font-family: GillSans;
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    text-align: center;
+  }
+  nav .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .links a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0.8em 0;
+  }
+}
+.navTwo {
+  max-width: 980px;
+  height: 80px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 99;
+  border-bottom: 2px solid #000;
+}
+.navTwo .logoTwo {
+  width: 92px;
+  height: 38px;
+  margin-left: 5px;
+  border: 2px solid #000;
+}
+.navTwo .logoTwo p {
+  margin-top: 17px;
+  font-size: 20px;
+  letter-spacing: 1.6px;
+  font-family: GillSans;
+  color: #000;
+}
+.navTwo .linksTwo a {
+  font-size: 15px;
+  text-decoration: none;
+  font-family: GillSans;
+  color: #000;
+}
+.navTwo .linksTwo span {
+  font-size: 15px;
+  margin: 0 20px;
+  font-family: GillSans;
+  color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  .navTwo {
+    text-align: center;
+    margin-right: 20px;
+  }
+  .navTwo .linksTwo {
+    margin-right: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navTwo .linksTwo a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0.8em 0;
+  }
+}
+.banner {
+  max-width: 1280px;
+  height: 500px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/heros.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/heros.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -80px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.banner p {
+  font-size: 60px;
+  margin-top: -69.5px;
+  margin-bottom: 27px;
+  text-align: center;
+  position: absolute;
+  font-family: ProximaNova;
+  color: #fff;
+}
+.banner .bot-ban {
+  font-size: 20px;
+  margin-top: 75px;
+  text-align: center;
+  position: absolute;
+  font-style: italic;
+  font-family: GillSans;
+  color: #fff;
+}
+.banner .submitted {
+  width: 121.62px;
+  height: 40.04px;
+  border: none;
+  margin-top: 170px;
+  font-size: 15px;
+  font-family: GillSans;
+  color: #fff;
+  background: #79addc;
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    width: 100%;
+  }
+}
+.form-content {
+  max-width: 818px;
+  min-height: 200px;
+  margin: 0 auto;
+}
+.form-content h1 {
+  font-family: ProximaNova;
+  font-size: 60px;
+}
+.form-content .top-boxes {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form-content .top-boxes .long-box {
+  width: 453px;
+}
+.form-content .top-boxes input {
+  width: 344px;
+  height: 58px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-family: GillSans;
+  border: 2px solid #79addc;
+}
+.form-content .mid-boxes {
+  margin-top: 20px;
+}
+.form-content .mid-boxes .holder {
+  position: relative;
+}
+.form-content .mid-boxes .holder label {
+  font-size: 18px;
+  color: #000;
+  font-family: GillSans;
+}
+.form-content .mid-boxes .holder input {
+  width: 725px;
+  height: 58px;
+  padding-left: 10px;
+  font-size: 18px;
+  margin-left: 20px;
+  font-family: GillSans;
+  border: 2px solid #79addc;
+}
+.form-content .mid-boxes .holder i {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.form-content .mid-box .holder {
+  position: relative;
+}
+.form-content .mid-box .holder label {
+  font-size: 18px;
+  color: #000;
+  font-family: GillSans;
+}
+.form-content .mid-box .holder input {
+  width: 725px;
+  height: 58px;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: GillSans;
+  border: 2px solid #79addc;
+}
+.form-content .mid-box .holder i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+.form-content .small-boxes {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form-content .small-boxes .holder {
+  position: relative;
+}
+.form-content .small-boxes .holder label {
+  font-size: 18px;
+  color: #000;
+  font-family: GillSans;
+}
+.form-content .small-boxes .holder input {
+  width: 103px;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-family: GillSans;
+  border: 2px solid #79addc;
+}
+.form-content .small-boxes .holder i {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.form-content .small-boxes .holder1 {
+  position: relative;
+  margin-right: 70px;
+}
+.form-content .small-boxes .holder1 label {
+  font-size: 18px;
+  color: #000;
+  font-family: GillSans;
+}
+.form-content .small-boxes .holder1 input {
+  width: 103px;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-family: GillSans;
+  border: 2px solid #79addc;
+}
+.form-content .small-boxes .holder1 i {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.form-content .small-boxes .holder2 {
+  position: relative;
+}
+.form-content .small-boxes .holder2 label {
+  font-size: 18px;
+  color: #000;
+  font-family: GillSans;
+}
+.form-content .small-boxes .holder2 input {
+  width: 103px;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-family: GillSans;
+  border: 2px solid #79addc;
+}
+.form-content .small-boxes .holder2 i {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.form-content .final-box {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form-content .final-box input {
+  width: 818px;
+  height: 200px;
+  padding-left: 10px;
+  padding-bottom: 150px;
+  font-size: 18px;
+  font-family: GillSans;
+  border: 2px solid #79addc;
+}
+.form-content .submit {
+  margin-top: 37px;
+  width: 813px;
+  height: 60.59px;
+  border-radius: 38px;
+  border: none;
+  font-size: 15px;
+  font-family: GillSans;
+  color: #fff;
+  background: #79addc;
+}
+
+@media only screen and (max-width: 800px) {
+  .form-content {
+    width: 100%;
+    min-height: 200px;
+  }
+  .form-content h1 {
+    margin-left: 100px;
+  }
+  .form-content .top-boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+  }
+  .form-content .long-box {
+    margin-top: 20px;
+  }
+  .form-content .small-boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+  }
+  .form-content .holder1 {
+    margin-left: 46.5px;
+  }
+  .form-content .holder2 {
+    margin-right: 10px;
+  }
+  .form-content .submit {
+    width: 100%;
+  }
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -70px;
+  /* Create three equal columns that sits next to each other */
+}
+.row .thumbnails {
+  width: 236px;
+  height: 304px;
+  padding: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/tour-01.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width: 150px; */
+}
+.row .thumbnails p {
+  margin-top: 37px;
+  font-size: 60px;
+  text-align: center;
+  font-family: ProximaNova;
+  color: #fff;
+}
+.row .thumbnails .money {
+  margin-top: -20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: ProximaNova;
+  color: #fff;
+}
+.row .thumbnails .submitting {
+  width: 133px;
+  height: 40px;
+  border-radius: 38px;
+  border: none;
+  margin-top: 50px;
+  margin-left: 45px;
+  font-size: 15px;
+  color: #fff;
+  font-family: GillSans;
+  background: #79addc;
+}
+.row .thumbnail {
+  width: 236px;
+  height: 304px;
+  padding: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/tour-02.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width: 150px; */
+}
+.row .thumbnail p {
+  margin-top: 37px;
+  font-size: 60px;
+  text-align: center;
+  font-family: ProximaNova;
+  color: #fff;
+}
+.row .thumbnail .money {
+  margin-top: -20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: ProximaNova;
+  color: #fff;
+}
+.row .thumbnail .submitting {
+  width: 133px;
+  height: 40px;
+  border-radius: 38px;
+  border: none;
+  margin-top: 57px;
+  margin-left: 45px;
+  font-size: 15px;
+  color: #fff;
+  font-family: GillSans;
+  background: #79addc;
+}
+.row .thumb {
+  width: 236px;
+  height: 304px;
+  padding: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/tour-03.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width: 150px; */
+}
+.row .thumb p {
+  margin-top: 37px;
+  font-size: 60px;
+  text-align: center;
+  font-family: ProximaNova;
+  color: #fff;
+}
+.row .thumb .money {
+  margin-top: -20px;
+  font-size: 30px;
+  text-align: center;
+  font-family: ProximaNova;
+  color: #fff;
+}
+.row .thumb .submitting {
+  width: 133px;
+  height: 40px;
+  border-radius: 38px;
+  border: none;
+  margin-top: 57px;
+  margin-left: 45px;
+  font-size: 15px;
+  color: #fff;
+  font-family: GillSans;
+  background: #79addc;
+}
+.row .column {
+  padding: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    width: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 940px;
+    margin-left: 100px;
+  }
+}
+.bottom {
+  margin-top: 100px;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #79addc;
+}
+
+.logoTwo {
+  margin-left: 150px;
+}
+.logoTwo .logo {
+  width: 92px;
+  height: 38px;
+  border: 2px solid #fff;
+}
+.logoTwo .logo p {
+  margin-top: 17px;
+  font-size: 20px;
+  letter-spacing: 1.6px;
+  font-family: GillSans;
+  color: #fff;
+}
+
+.terms {
+  margin-left: 25px;
+  font-size: 12px;
+  font-family: GillSans;
+  color: #fff;
+}
+
+.social .media {
+  margin-right: 150.8px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #fff;
+}
+
+.about {
+  margin-top: 110px;
+  margin-bottom: 180px;
+}
+.about .about-header h1 {
+  font-size: 60px;
+  letter-spacing: 5px;
+  font-family: ProximaNovaThin;
+}
+.about .about-header hr {
+  width: 165px;
+  margin-top: -10px;
+  margin-bottom: 36.5px;
+  border: 1px solid;
+}
+.about .about-header p {
+  font-size: 16px;
+  font-family: GillSans;
+}
+.about .about-client-quotes {
+  margin-top: 107px;
+}
+.about .about-client-quotes .client-quote-title {
+  font-size: 40px;
+  font-family: ProximaNovaThin;
+}
+.about .about-client-quotes hr {
+  width: 255px;
+  margin-bottom: 36.5px;
+  margin-top: 2.5px;
+  border: 1px solid;
+}
+.about .about-client-quotes .client-box {
+  max-width: 722px;
+  margin-bottom: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.about .about-client-quotes .client-box .client-image {
+  width: 260px;
+  height: 150px;
+  margin-right: 21px;
+  overflow: hidden;
+}
+.about .about-client-quotes .client-box .client-image img {
+  width: 100%;
+}
+.about .about-client-quotes .client-box .client-quote {
+  max-width: 440px;
+  margin-bottom: 20px;
+}
+.about .about-client-quotes .client-box .client-quote p {
+  font-size: 16px;
+  font-family: GillSans;
+  font-style: italic;
+}
+.about .about-client-quotes .client-box .client-name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+  font-family: ProximaNovaThin;
+  color: #79addc;
+}
+
+@media screen and (max-width: 800px) {
+  .about .about-header h1 {
+    margin-left: 30px;
+  }
+  .about .about-header hr {
+    margin-left: 30px;
+  }
+  .about .about-header p {
+    margin-left: 30px;
+  }
+  .about .about-client-quotes .client-quote-title {
+    margin-left: 30px;
+  }
+  .about .about-client-quotes hr {
+    margin-left: 30px;
+  }
+
+  .client-box {
+    width: 722px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 30px;
+    height: 100%;
+  }
+  .client-box .client-name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 300px;
+  }
+}
+.tours-hero {
+  max-width: 980px;
+  height: 200px;
+  margin: 49.5px auto 0 auto;
+  margin-bottom: 49.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../images/tours-header.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/tours-header.jpg);
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tours-hero .tours-hero-text {
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+  position: absolute;
+}
+
+@media only screen and (max-width: 800px) {
+  .tours-hero {
+    width: 100%;
+  }
+}
+.tours-promo {
+  max-width: 980px;
+  min-height: 304px;
+  margin-bottom: 55px;
+  margin-left: 268px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.tours-promo .promo {
+  height: 304px;
+  width: 236px;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tour-01.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tours-promo .promo .promo-text {
+  font-size: 60px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo .promo-textMoney {
+  font-size: 30px;
+  margin-top: -30px;
+  margin-bottom: 57px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo .read-btn {
+  background-color: #79addc;
+  width: 133px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 38px;
+  border: none;
+  font-family: GillSans;
+  cursor: pointer;
+}
+.tours-promo .promo .read-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.tours-promo .promo1 {
+  height: 304px;
+  width: 236px;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tour-02.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tours-promo .promo1 .promo-text {
+  font-size: 60px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo1 .promo-textMoney {
+  font-size: 30px;
+  margin-top: -30px;
+  margin-bottom: 57px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo1 .read-btn {
+  background-color: #79addc;
+  width: 133px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 38px;
+  border: none;
+  font-family: GillSans;
+  cursor: pointer;
+}
+.tours-promo .promo1 .read-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.tours-promo .promo2 {
+  height: 304px;
+  width: 236px;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tour-03.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tours-promo .promo2 .promo-text {
+  font-size: 60px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo2 .promo-textMoney {
+  font-size: 30px;
+  margin-top: -30px;
+  margin-bottom: 57px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo2 .read-btn {
+  background-color: #79addc;
+  width: 133px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 38px;
+  border: none;
+  font-family: GillSans;
+  cursor: pointer;
+}
+.tours-promo .promo2 .read-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.tours-promo .promo3 {
+  height: 304px;
+  width: 236px;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tour-04.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-04.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tours-promo .promo3 .promo-text {
+  font-size: 60px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo3 .promo-textMoney {
+  font-size: 30px;
+  margin-top: -30px;
+  margin-bottom: 57px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo3 .read-btn {
+  background-color: #79addc;
+  width: 133px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 38px;
+  border: none;
+  font-family: GillSans;
+  cursor: pointer;
+}
+.tours-promo .promo3 .read-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.tours-promo .promo4 {
+  height: 304px;
+  width: 236px;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tour-05.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-05.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tours-promo .promo4 .promo-text {
+  font-size: 60px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo4 .promo-textMoney {
+  font-size: 30px;
+  margin-top: -30px;
+  margin-bottom: 57px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo4 .read-btn {
+  background-color: #79addc;
+  width: 133px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 38px;
+  border: none;
+  font-family: GillSans;
+  cursor: pointer;
+}
+.tours-promo .promo4 .read-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.tours-promo .promo5 {
+  height: 304px;
+  width: 236px;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tour-06.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-06.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tours-promo .promo5 .promo-text {
+  font-size: 60px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo5 .promo-textMoney {
+  font-size: 30px;
+  margin-top: -30px;
+  margin-bottom: 57px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo5 .read-btn {
+  background-color: #79addc;
+  width: 133px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 38px;
+  border: none;
+  font-family: GillSans;
+  cursor: pointer;
+}
+.tours-promo .promo5 .read-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.tours-promo .promo6 {
+  height: 304px;
+  width: 236px;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tour-07.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-07.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tours-promo .promo6 .promo-text {
+  font-size: 60px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo6 .promo-textMoney {
+  font-size: 30px;
+  margin-top: -30px;
+  margin-bottom: 57px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo6 .read-btn {
+  background-color: #79addc;
+  width: 133px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 38px;
+  border: none;
+  font-family: GillSans;
+  cursor: pointer;
+}
+.tours-promo .promo6 .read-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.tours-promo .promo7 {
+  height: 304px;
+  width: 236px;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tour-08.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-08.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tours-promo .promo7 .promo-text {
+  font-size: 60px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo7 .promo-textMoney {
+  font-size: 30px;
+  margin-top: -30px;
+  margin-bottom: 57px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo7 .read-btn {
+  background-color: #79addc;
+  width: 133px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 38px;
+  border: none;
+  font-family: GillSans;
+  cursor: pointer;
+}
+.tours-promo .promo7 .read-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.tours-promo .promo8 {
+  height: 304px;
+  width: 236px;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/tour-09.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-09.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tours-promo .promo8 .promo-text {
+  font-size: 60px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo8 .promo-textMoney {
+  font-size: 30px;
+  margin-top: -30px;
+  margin-bottom: 57px;
+  font-family: ProximaNova;
+}
+.tours-promo .promo8 .read-btn {
+  background-color: #79addc;
+  width: 133px;
+  height: 40px;
+  padding: 10px 15px;
+  border-radius: 38px;
+  border: none;
+  font-family: GillSans;
+  cursor: pointer;
+}
+.tours-promo .promo8 .read-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .tours-promo {
+    width: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 940px;
+    margin-left: 100px;
+  }
+}
+.israel-hero {
+  max-width: 980px;
+  height: 413px;
+  margin: 48.5px auto 0 auto;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../images/tour-01.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/tour-01.jpg);
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.israel-hero .israel-hero-text {
+  font-size: 80px;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 2px;
+  position: absolute;
+  font-family: ProximaNova;
+}
+.israel-hero .israel-price-text {
+  font-size: 30px;
+  margin-bottom: 0;
+  right: 10px;
+  bottom: 10px;
+  font-style: italic;
+  position: absolute;
+  font-family: ProximaNova;
+}
+
+.israel-promo {
+  max-width: 980px;
+  min-height: 304px;
+  margin-left: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.israel-promo .photoOne {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/israel/israel-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.israel-promo .photoTwo {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/israel/israel-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.israel-promo .photoThree {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/israel/israel-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.israel-days {
+  margin-top: 29px;
+  margin-left: 270px;
+  max-width: 981px;
+  min-height: 776px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.israel-days .israel-days-title {
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days .israel-days-title .number {
+  margin-left: 20px;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days hr {
+  width: 140px;
+  margin-bottom: 36.5px;
+  margin-top: -25px;
+  border: 1px solid;
+}
+.israel-days p {
+  font-size: 16px;
+  font-family: GillSans;
+}
+
+.read-btnOne {
+  margin-left: 390px;
+  margin-top: 300px;
+  width: 133px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-family: GillSans;
+  padding: 10px 15px;
+  background-color: #79addc;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .israel-hero {
+    width: 100%;
+  }
+
+  .israel-promo {
+    width: 300px;
+    min-height: 940px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .israel-promo .photoOne {
+    margin-bottom: 30px;
+  }
+  .israel-promo .photoTwo {
+    margin-bottom: 30px;
+  }
+
+  .israel-days {
+    width: 450px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 150px;
+    height: 100%;
+  }
+  .israel-days .israel-days-title {
+    margin-left: -180px;
+  }
+  .israel-days hr {
+    margin-left: -180px;
+  }
+  .israel-days p {
+    width: 350px;
+    margin-left: -180px;
+  }
+  .israel-days .read-btnOne {
+    margin-left: -100px;
+  }
+
+  .bottom {
+    margin-top: 400px;
+  }
+}
+.usa-hero {
+  max-width: 980px;
+  height: 413px;
+  margin: 48.5px auto 0 auto;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../images/tour-02.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/tour-02.jpg);
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.usa-hero .usa-hero-text {
+  font-size: 80px;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 2px;
+  position: absolute;
+  font-family: ProximaNova;
+}
+.usa-hero .usa-price-text {
+  font-size: 30px;
+  margin-bottom: 0;
+  right: 10px;
+  bottom: 10px;
+  font-style: italic;
+  position: absolute;
+  font-family: ProximaNova;
+}
+
+.usa-promo {
+  max-width: 980px;
+  min-height: 304px;
+  margin-left: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.usa-promo .photo-usaOne {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/usa/usa-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.usa-promo .photo-usaTwo {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/usa/usa-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.usa-promo .photo-usaThree {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/usa/usa-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.israel-days {
+  margin-top: 29px;
+  margin-left: 270px;
+  max-width: 981px;
+  min-height: 776px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.israel-days .israel-days-title {
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days .israel-days-title .number {
+  margin-left: 20px;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days hr {
+  width: 140px;
+  margin-bottom: 36.5px;
+  margin-top: -25px;
+  border: 1px solid;
+}
+.israel-days p {
+  font-size: 16px;
+  font-family: GillSans;
+}
+
+.read-btnOne {
+  margin-left: 390px;
+  margin-top: 300px;
+  width: 133px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-family: GillSans;
+  padding: 10px 15px;
+  background-color: #79addc;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .usa-hero {
+    width: 100%;
+  }
+
+  .usa-promo {
+    width: 300px;
+    min-height: 940px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .usa-promo .photo-usaOne {
+    margin-bottom: 30px;
+  }
+  .usa-promo .photo-usaTwo {
+    margin-bottom: 30px;
+  }
+}
+.aus-hero {
+  max-width: 980px;
+  height: 413px;
+  margin: 48.5px auto 0 auto;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../images/tour-03.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/tour-03.jpg);
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aus-hero .aus-hero-text {
+  font-size: 80px;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 2px;
+  position: absolute;
+  font-family: ProximaNova;
+}
+.aus-hero .aus-price-text {
+  font-size: 30px;
+  margin-bottom: 0;
+  right: 10px;
+  bottom: 10px;
+  font-style: italic;
+  position: absolute;
+  font-family: ProximaNova;
+}
+
+.aus-promo {
+  max-width: 980px;
+  min-height: 304px;
+  margin-left: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.aus-promo .photo-ausOne {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/aus/aus-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aus-promo .photo-ausTwo {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/aus/aus-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aus-promo .photo-ausThree {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/aus/aus-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.israel-days {
+  margin-top: 29px;
+  margin-left: 270px;
+  max-width: 981px;
+  min-height: 776px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.israel-days .israel-days-title {
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days .israel-days-title .number {
+  margin-left: 20px;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days hr {
+  width: 140px;
+  margin-bottom: 36.5px;
+  margin-top: -25px;
+  border: 1px solid;
+}
+.israel-days p {
+  font-size: 16px;
+  font-family: GillSans;
+}
+
+.read-btnOne {
+  margin-left: 390px;
+  margin-top: 300px;
+  width: 133px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-family: GillSans;
+  padding: 10px 15px;
+  background-color: #79addc;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .aus-hero {
+    width: 100%;
+  }
+
+  .aus-promo {
+    width: 300px;
+    min-height: 940px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aus-promo .photo-ausOne {
+    margin-bottom: 30px;
+  }
+  .aus-promo .photo-ausTwo {
+    margin-bottom: 30px;
+  }
+}
+.nz-hero {
+  max-width: 980px;
+  height: 413px;
+  margin: 48.5px auto 0 auto;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../images/tour-04.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/tour-04.jpg);
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.nz-hero .nz-hero-text {
+  font-size: 80px;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 2px;
+  position: absolute;
+  font-family: ProximaNova;
+}
+.nz-hero .nz-price-text {
+  font-size: 30px;
+  margin-bottom: 0;
+  right: 10px;
+  bottom: 10px;
+  font-style: italic;
+  position: absolute;
+  font-family: ProximaNova;
+}
+
+.nz-promo {
+  max-width: 980px;
+  min-height: 304px;
+  margin-left: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nz-promo .photo-nzOne {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/nz/nz-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.nz-promo .photo-nzTwo {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/nz/nz-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.nz-promo .photo-nzThree {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/nz/nz-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.israel-days {
+  margin-top: 29px;
+  margin-left: 270px;
+  max-width: 981px;
+  min-height: 776px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.israel-days .israel-days-title {
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days .israel-days-title .number {
+  margin-left: 20px;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days hr {
+  width: 140px;
+  margin-bottom: 36.5px;
+  margin-top: -25px;
+  border: 1px solid;
+}
+.israel-days p {
+  font-size: 16px;
+  font-family: GillSans;
+}
+
+.read-btnOne {
+  margin-left: 390px;
+  margin-top: 300px;
+  width: 133px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-family: GillSans;
+  padding: 10px 15px;
+  background-color: #79addc;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .nz-hero {
+    width: 100%;
+  }
+
+  .nz-promo {
+    width: 300px;
+    min-height: 940px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nz-promo .photo-nzOne {
+    margin-bottom: 30px;
+  }
+  .nz-promo .photo-nzTwo {
+    margin-bottom: 30px;
+  }
+}
+.france-hero {
+  max-width: 980px;
+  height: 413px;
+  margin: 48.5px auto 0 auto;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../images/tour-05.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/tour-05.jpg);
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.france-hero .france-hero-text {
+  font-size: 80px;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 2px;
+  position: absolute;
+  font-family: ProximaNova;
+}
+.france-hero .france-price-text {
+  font-size: 30px;
+  margin-bottom: 0;
+  right: 10px;
+  bottom: 10px;
+  font-style: italic;
+  position: absolute;
+  font-family: ProximaNova;
+}
+
+.france-promo {
+  max-width: 980px;
+  min-height: 304px;
+  margin-left: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.france-promo .photo-franceOne {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/france/france-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.france-promo .photo-franceTwo {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/france/france-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.france-promo .photo-franceThree {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/france/france-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.israel-days {
+  margin-top: 29px;
+  margin-left: 270px;
+  max-width: 981px;
+  min-height: 776px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.israel-days .israel-days-title {
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days .israel-days-title .number {
+  margin-left: 20px;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days hr {
+  width: 140px;
+  margin-bottom: 36.5px;
+  margin-top: -25px;
+  border: 1px solid;
+}
+.israel-days p {
+  font-size: 16px;
+  font-family: GillSans;
+}
+
+.read-btnOne {
+  margin-left: 390px;
+  margin-top: 300px;
+  width: 133px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-family: GillSans;
+  padding: 10px 15px;
+  background-color: #79addc;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .france-hero {
+    width: 100%;
+  }
+
+  .france-promo {
+    width: 300px;
+    min-height: 940px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .france-promo .photo-franceOne {
+    margin-bottom: 30px;
+  }
+  .france-promo .photo-franceTwo {
+    margin-bottom: 30px;
+  }
+}
+.egypt-hero {
+  max-width: 980px;
+  height: 413px;
+  margin: 48.5px auto 0 auto;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../images/tour-06.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/tour-06.jpg);
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.egypt-hero .egypt-hero-text {
+  font-size: 80px;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 2px;
+  position: absolute;
+  font-family: ProximaNova;
+}
+.egypt-hero .egypt-price-text {
+  font-size: 30px;
+  margin-bottom: 0;
+  right: 10px;
+  bottom: 10px;
+  font-style: italic;
+  position: absolute;
+  font-family: ProximaNova;
+}
+
+.egypt-promo {
+  max-width: 980px;
+  min-height: 304px;
+  margin-left: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.egypt-promo .photo-egyptOne {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/egypt/egypt-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.egypt-promo .photo-egyptTwo {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/egypt/egypt-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.egypt-promo .photo-egyptThree {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/egypt/egypt-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.israel-days {
+  margin-top: 29px;
+  margin-left: 270px;
+  max-width: 981px;
+  min-height: 776px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.israel-days .israel-days-title {
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days .israel-days-title .number {
+  margin-left: 20px;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days hr {
+  width: 140px;
+  margin-bottom: 36.5px;
+  margin-top: -25px;
+  border: 1px solid;
+}
+.israel-days p {
+  font-size: 16px;
+  font-family: GillSans;
+}
+
+.read-btnOne {
+  margin-left: 390px;
+  margin-top: 300px;
+  width: 133px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-family: GillSans;
+  padding: 10px 15px;
+  background-color: #79addc;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .egypt-hero {
+    width: 100%;
+  }
+
+  .egypt-promo {
+    width: 300px;
+    min-height: 940px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .egypt-promo .photo-egyptOne {
+    margin-bottom: 30px;
+  }
+  .egypt-promo .photo-egyptTwo {
+    margin-bottom: 30px;
+  }
+}
+.japan-hero {
+  max-width: 980px;
+  height: 413px;
+  margin: 48.5px auto 0 auto;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../images/tour-07.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/tour-07.jpg);
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.japan-hero .japan-hero-text {
+  font-size: 80px;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 2px;
+  position: absolute;
+  font-family: ProximaNova;
+}
+.japan-hero .japan-price-text {
+  font-size: 30px;
+  margin-bottom: 0;
+  right: 10px;
+  bottom: 10px;
+  font-style: italic;
+  position: absolute;
+  font-family: ProximaNova;
+}
+
+.japan-promo {
+  max-width: 980px;
+  min-height: 304px;
+  margin-left: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.japan-promo .photo-japanOne {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/japan/japan-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.japan-promo .photo-japanTwo {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/japan/japan-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.japan-promo .photo-japanThree {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/japan/japan-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.israel-days {
+  margin-top: 29px;
+  margin-left: 270px;
+  max-width: 981px;
+  min-height: 776px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.israel-days .israel-days-title {
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days .israel-days-title .number {
+  margin-left: 20px;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days hr {
+  width: 140px;
+  margin-bottom: 36.5px;
+  margin-top: -25px;
+  border: 1px solid;
+}
+.israel-days p {
+  font-size: 16px;
+  font-family: GillSans;
+}
+
+.read-btnOne {
+  margin-left: 390px;
+  margin-top: 300px;
+  width: 133px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-family: GillSans;
+  padding: 10px 15px;
+  background-color: #79addc;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .japan-hero {
+    width: 100%;
+  }
+
+  .japan-promo {
+    width: 300px;
+    min-height: 940px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .japan-promo .photo-japanOne {
+    margin-bottom: 30px;
+  }
+  .japan-promo .photo-japanTwo {
+    margin-bottom: 30px;
+  }
+}
+.canada-hero {
+  max-width: 980px;
+  height: 413px;
+  margin: 48.5px auto 0 auto;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../images/tour-08.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/tour-08.jpg);
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.canada-hero .canada-hero-text {
+  font-size: 80px;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 2px;
+  position: absolute;
+  font-family: ProximaNova;
+}
+.canada-hero .canada-price-text {
+  font-size: 30px;
+  margin-bottom: 0;
+  right: 10px;
+  bottom: 10px;
+  font-style: italic;
+  position: absolute;
+  font-family: ProximaNova;
+}
+
+.canada-promo {
+  max-width: 980px;
+  min-height: 304px;
+  margin-left: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.canada-promo .photo-canadaOne {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/canada/canada-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.canada-promo .photo-canadaTwo {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/canada/canada-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.canada-promo .photo-canadaThree {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/canada/canada-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.israel-days {
+  margin-top: 29px;
+  margin-left: 270px;
+  max-width: 981px;
+  min-height: 776px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.israel-days .israel-days-title {
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days .israel-days-title .number {
+  margin-left: 20px;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days hr {
+  width: 140px;
+  margin-bottom: 36.5px;
+  margin-top: -25px;
+  border: 1px solid;
+}
+.israel-days p {
+  font-size: 16px;
+  font-family: GillSans;
+}
+
+.read-btnOne {
+  margin-left: 390px;
+  margin-top: 300px;
+  width: 133px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-family: GillSans;
+  padding: 10px 15px;
+  background-color: #79addc;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .canada-hero {
+    width: 100%;
+  }
+
+  .canada-promo {
+    width: 300px;
+    min-height: 940px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .canada-promo .photo-canadaOne {
+    margin-bottom: 30px;
+  }
+  .canada-promo .photo-canadaTwo {
+    margin-bottom: 30px;
+  }
+}
+.uae-hero {
+  max-width: 980px;
+  height: 413px;
+  margin: 48.5px auto 0 auto;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../images/tour-09.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/tour-09.jpg);
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.uae-hero .uae-hero-text {
+  font-size: 80px;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 2px;
+  position: absolute;
+  font-family: ProximaNova;
+}
+.uae-hero .uae-price-text {
+  font-size: 30px;
+  margin-bottom: 0;
+  right: 10px;
+  bottom: 10px;
+  font-style: italic;
+  position: absolute;
+  font-family: ProximaNova;
+}
+
+.uae-promo {
+  max-width: 980px;
+  min-height: 304px;
+  margin-left: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.uae-promo .photo-uaeOne {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/uae/uae-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.uae-promo .photo-uaeTwo {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/uae/uae-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.uae-promo .photo-uaeThree {
+  height: 347px;
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-image: url(../images/uae/uae-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.israel-days {
+  margin-top: 29px;
+  margin-left: 270px;
+  max-width: 981px;
+  min-height: 776px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.israel-days .israel-days-title {
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days .israel-days-title .number {
+  margin-left: 20px;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: ProximaNova;
+}
+.israel-days hr {
+  width: 140px;
+  margin-bottom: 36.5px;
+  margin-top: -25px;
+  border: 1px solid;
+}
+.israel-days p {
+  font-size: 16px;
+  font-family: GillSans;
+}
+
+.read-btnOne {
+  margin-left: 390px;
+  margin-top: 300px;
+  width: 133px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-family: GillSans;
+  padding: 10px 15px;
+  background-color: #79addc;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .uae-hero {
+    width: 100%;
+  }
+
+  .uae-promo {
+    width: 300px;
+    min-height: 940px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .uae-promo .photo-uaeOne {
+    margin-bottom: 30px;
+  }
+  .uae-promo .photo-uaeTwo {
+    margin-bottom: 30px;
+  }
+}

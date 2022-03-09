@@ -1,0 +1,188 @@
+.israel-hero {
+  max-width: $content-width;
+  height: 413px;
+  margin: 48.5px auto 0 auto;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(../images/tour-01.jpg);
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .israel-hero-text {
+    font-size: 80px;
+    top: 10px;
+    left: 10px;
+    letter-spacing: 2px;
+    position: absolute;
+    font-family: ProximaNova;
+  }
+
+  .israel-price-text {
+    font-size: 30px;
+    margin-bottom: 0;
+    right: 10px;
+    bottom: 10px;
+    font-style: italic;
+    position: absolute;
+    font-family: ProximaNova;
+  }
+}
+
+.israel-promo {
+  max-width: $content-width;
+  min-height: 304px;
+  margin-left: 270px;
+  //   background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  //   Israel photo one
+  .photoOne {
+    height: 347px;
+    width: 298px;
+    // background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-image: url(../images/israel/israel-tour-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+
+  .photoTwo {
+    height: 347px;
+    width: 298px;
+    // background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-image: url(../images/israel/israel-tour-02.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+
+  .photoThree {
+    height: 347px;
+    width: 298px;
+    // background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-image: url(../images/israel/israel-tour-03.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+}
+
+.israel-days {
+  margin-top: 29px;
+  margin-left: 270px;
+  max-width: 981px;
+  min-height: 776px;
+  align-items: center;
+  justify-content: center;
+
+  .israel-days-title {
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-family: ProximaNova;
+
+    .number {
+      margin-left: 20px;
+      font-size: 60px;
+      letter-spacing: 10px;
+      font-family: ProximaNova;
+    }
+  }
+
+  hr {
+    width: 140px;
+    margin-bottom: 36.5px;
+    margin-top: -25px;
+    border: 1px solid;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: GillSans;
+  }
+}
+
+.read-btnOne {
+  margin-left: 390px;
+  margin-top: 300px;
+  width: 133px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  font-family: GillSans;
+  padding: 10px 15px;
+  background-color: $site-background;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .israel-hero {
+    width: 100%;
+  }
+
+  .israel-promo {
+    width: 300px;
+    min-height: 940px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+
+    .photoOne {
+      margin-bottom: 30px;
+    }
+
+    .photoTwo {
+      margin-bottom: 30px;
+    }
+  }
+
+  .israel-days {
+    width: 450px;
+    flex-direction: column;
+    margin-bottom: 150px;
+    height: 100%;
+
+    .israel-days-title {
+      margin-left: -180px;
+    }
+    hr {
+      margin-left: -180px;
+    }
+
+    p {
+      width: 350px;
+      margin-left: -180px;
+    }
+
+    .read-btnOne {
+      margin-left: -100px;
+    }
+  }
+  .bottom {
+    margin-top: 400px;
+  }
+}

@@ -1,0 +1,442 @@
+.tours-promo {
+  max-width: $content-width;
+  min-height: 304px;
+  margin-bottom: 55px;
+  //   background-color: aqua;
+  margin-left: 268px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  //   Israel promotion trip
+  .promo {
+    height: 304px;
+    width: 236px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(
+        rgba($site-black, 0.4),
+        rgba($site-black, 0.4)
+      ),
+      url(../images/tour-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+    .promo-text {
+      font-size: 60px;
+      font-family: ProximaNova;
+    }
+
+    .promo-textMoney {
+      font-size: 30px;
+      margin-top: -30px;
+      margin-bottom: 57px;
+      font-family: ProximaNova;
+    }
+    .read-btn {
+      background-color: $site-background;
+      width: 133px;
+      height: 40px;
+      padding: 10px 15px;
+      border-radius: 38px;
+      border: none;
+      font-family: GillSans;
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  //   USA Promotion trip
+  .promo1 {
+    height: 304px;
+    width: 236px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(
+        rgba($site-black, 0.4),
+        rgba($site-black, 0.4)
+      ),
+      url(../images/tour-02.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+    .promo-text {
+      font-size: 60px;
+      font-family: ProximaNova;
+    }
+
+    .promo-textMoney {
+      font-size: 30px;
+      margin-top: -30px;
+      margin-bottom: 57px;
+      font-family: ProximaNova;
+    }
+    .read-btn {
+      background-color: $site-background;
+      width: 133px;
+      height: 40px;
+      padding: 10px 15px;
+      border-radius: 38px;
+      border: none;
+      font-family: GillSans;
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  //   Australia promotion trip
+  .promo2 {
+    height: 304px;
+    width: 236px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(
+        rgba($site-black, 0.4),
+        rgba($site-black, 0.4)
+      ),
+      url(../images/tour-03.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+    .promo-text {
+      font-size: 60px;
+      font-family: ProximaNova;
+    }
+
+    .promo-textMoney {
+      font-size: 30px;
+      margin-top: -30px;
+      margin-bottom: 57px;
+      font-family: ProximaNova;
+    }
+    .read-btn {
+      background-color: $site-background;
+      width: 133px;
+      height: 40px;
+      padding: 10px 15px;
+      border-radius: 38px;
+      border: none;
+      font-family: GillSans;
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  //   New Zealand promotion trip
+  .promo3 {
+    height: 304px;
+    width: 236px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(
+        rgba($site-black, 0.4),
+        rgba($site-black, 0.4)
+      ),
+      url(../images/tour-04.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+    .promo-text {
+      font-size: 60px;
+      font-family: ProximaNova;
+    }
+
+    .promo-textMoney {
+      font-size: 30px;
+      margin-top: -30px;
+      margin-bottom: 57px;
+      font-family: ProximaNova;
+    }
+    .read-btn {
+      background-color: $site-background;
+      width: 133px;
+      height: 40px;
+      padding: 10px 15px;
+      border-radius: 38px;
+      border: none;
+      font-family: GillSans;
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  //   France promotion trip
+  .promo4 {
+    height: 304px;
+    width: 236px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(
+        rgba($site-black, 0.4),
+        rgba($site-black, 0.4)
+      ),
+      url(../images/tour-05.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+    .promo-text {
+      font-size: 60px;
+      font-family: ProximaNova;
+    }
+
+    .promo-textMoney {
+      font-size: 30px;
+      margin-top: -30px;
+      margin-bottom: 57px;
+      font-family: ProximaNova;
+    }
+    .read-btn {
+      background-color: $site-background;
+      width: 133px;
+      height: 40px;
+      padding: 10px 15px;
+      border-radius: 38px;
+      border: none;
+      font-family: GillSans;
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  //   Egypt promotion trip
+  .promo5 {
+    height: 304px;
+    width: 236px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(
+        rgba($site-black, 0.4),
+        rgba($site-black, 0.4)
+      ),
+      url(../images/tour-06.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+    .promo-text {
+      font-size: 60px;
+      font-family: ProximaNova;
+    }
+
+    .promo-textMoney {
+      font-size: 30px;
+      margin-top: -30px;
+      margin-bottom: 57px;
+      font-family: ProximaNova;
+    }
+    .read-btn {
+      background-color: $site-background;
+      width: 133px;
+      height: 40px;
+      padding: 10px 15px;
+      border-radius: 38px;
+      border: none;
+      font-family: GillSans;
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Japan promotion trip
+  .promo6 {
+    height: 304px;
+    width: 236px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(
+        rgba($site-black, 0.4),
+        rgba($site-black, 0.4)
+      ),
+      url(../images/tour-07.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+    .promo-text {
+      font-size: 60px;
+      font-family: ProximaNova;
+    }
+
+    .promo-textMoney {
+      font-size: 30px;
+      margin-top: -30px;
+      margin-bottom: 57px;
+      font-family: ProximaNova;
+    }
+    .read-btn {
+      background-color: $site-background;
+      width: 133px;
+      height: 40px;
+      padding: 10px 15px;
+      border-radius: 38px;
+      border: none;
+      font-family: GillSans;
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  //   Canada promotion trip
+  .promo7 {
+    height: 304px;
+    width: 236px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(
+        rgba($site-black, 0.4),
+        rgba($site-black, 0.4)
+      ),
+      url(../images/tour-08.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+    .promo-text {
+      font-size: 60px;
+      font-family: ProximaNova;
+    }
+
+    .promo-textMoney {
+      font-size: 30px;
+      margin-top: -30px;
+      margin-bottom: 57px;
+      font-family: ProximaNova;
+    }
+    .read-btn {
+      background-color: $site-background;
+      width: 133px;
+      height: 40px;
+      padding: 10px 15px;
+      border-radius: 38px;
+      border: none;
+      font-family: GillSans;
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  //   UAE promotion trip
+  .promo8 {
+    height: 304px;
+    width: 236px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(
+        rgba($site-black, 0.4),
+        rgba($site-black, 0.4)
+      ),
+      url(../images/tour-09.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+    .promo-text {
+      font-size: 60px;
+      font-family: ProximaNova;
+    }
+
+    .promo-textMoney {
+      font-size: 30px;
+      margin-top: -30px;
+      margin-bottom: 57px;
+      font-family: ProximaNova;
+    }
+    .read-btn {
+      background-color: $site-background;
+      width: 133px;
+      height: 40px;
+      padding: 10px 15px;
+      border-radius: 38px;
+      border: none;
+      font-family: GillSans;
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .tours-promo {
+    width: 300px;
+    flex-direction: column;
+    min-height: 940px;
+    margin-left: 100px;
+  }
+}
